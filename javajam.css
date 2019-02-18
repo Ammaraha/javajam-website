@@ -1,0 +1,181 @@
+
+header,nav, main, footer { display: block; }
+
+#wrapper { 
+		   margin-left: auto;
+		   margin-right: auto;
+		   width: 80%; 
+		   min-width: 700px;
+		   max-width: 1024px;
+		   box-shadow: 3px 3px 3px; 
+		   background-color:#231814;}
+
+body {
+background-color : #FCEBB6;
+color : #221811;
+font-family : Verdana, Arial, sans-serif;
+background-image : url(background.gif);
+}
+header {
+background-image: url(javajamlogo.jpg);
+background-repeat : no-repeat;
+height: 150px;
+width : 100%;
+background-color: #ccaa66;
+text-align:center;
+
+}
+table{width:90%;
+margin:auto;
+border-spacing:0;
+background-color:#ffffcc;}
+td,th{padding:10px;}
+tr:nth-of-type(odd){background-color:#d2b48c;}
+ 
+ #heroroad {
+background-image : url(heroroad.jpg);
+background-repeat : no-repeat;
+height : 200px;
+}
+#heromugs {
+background-image : url(heromugs.jpg);
+background-repeat : no-repeat;
+height : 200px;
+}
+#heroguitar {
+background-image : url(heroguitar.jpg);
+background-repeat : no-repeat;
+height : 200px;
+}
+
+
+main {
+padding-right : 0;
+margin-left:200px;
+padding-bottom : 2em;
+display : block;
+padding-top : 0;
+background-color : #FEF6C2;
+
+}
+nav {
+text-align : center;
+font-weight : bold;
+font-size : 1.5em;
+background-color : #111;
+text-align: center; 
+float: left;
+width : 200px;
+font-weight: bold;
+padding-top:0px;
+}
+nav a:{
+text-decoration : none;
+}
+
+nav a:link {
+color : #FEF6C2;
+}
+nav a:visited{ #D2B48C;
+}
+nav a:hover {#CC9933;
+}
+nav ul {
+list-style-type : none;
+padding-left : 0;
+}
+ul {
+padding-left : 130px;
+}
+h1{
+	padding-top:40px;
+}
+main h2, main h3, main h4, main p, main div, main ul, main dl {
+padding-left : 3em;
+padding-right : 2em;
+}
+.details { padding-left: 20%;
+		   padding-right: 20%; 
+		   overflow: auto; }
+main.h2 ,h3, h4 , p,  ul, dl {padding-left: 3em; padding-right: 2em;}
+footer { background-color: #ccaa66;
+	   color: #000000;
+	   font-size: small;
+	   font-style: italic; 
+	   text-align: center;
+	   padding-top: 20px; 
+	   padding-bottom: 20px; }
+	   
+	   #mobile{display:none}
+	   #desktop{display:inline}
+	   
+@media only screen and (max-width:1024px){
+	body{margin:0;background-image:none;}
+	#wrapper{width:auto;
+	min-width:0;
+	margin:0;
+	padding:0;
+	box-shadow:none;}
+	header{border-bottom:5px solid #FEF6C2;}
+	h1{margin-top:0;
+	margin-bottom:1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	font-size:2.5em;}
+	nav{float:none;
+	width:auto;
+	padding-top:1em;
+	margin:10px;
+	font-size:1.3em;}
+	nav li{display:inline-block;}
+	nav a{padding:1em;
+	width:8em;
+	font-weight:bold;
+	border-style:none;}
+	nav ul { padding:0;
+	margin:0;}
+	#heroroad,#heromugs,#heroguitar{margin:0;padding:0;}
+	main {padding:0;margin:0;font-size:90%;}
+}
+
+	@media only screen and (max-width:768px;)
+	{
+		header {background:image:url(javajammini.jpg);height:128px;}
+		h1{font-size:2em;
+		text-align:centered;
+		padding-left:0;}
+		nav{margin:0;}
+		nav a{display:block;
+		padding:0.2em;
+		width:auto;
+		border-bottom:1px#FEF6C2;}
+		nav li{dispaly:block;}
+		main{padding-top:1px;}
+		h2{padding-top:.5em;
+		padding-right:0;
+		padding-bottom:0;
+		padding-left:0.5em;
+		margin-right:0.5em;}
+		details{padding-left:0;
+		padding-right:0;
+		}
+		#heroroad,#heromugs,#heroguitar{background-image:none;
+		height:auto;}
+		.floatleft{padding-right:0.5em;
+		padding-left:0.5em;}
+		#moble{display:none}
+		#desktop{display:none;}
+		}
+		
+		form{padding:2em;}
+		label {float:left;
+		        display:block;
+				text-align:right;
+				width:8em;
+				padding-right:1em;
+		}
+		input,textarea{display:block;
+		               margin-bottom:1em;
+					   }
+		#mySubmit{margin-left:9.5em;}
+		
